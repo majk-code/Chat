@@ -1,0 +1,13 @@
+.message-input {
+    border: 1px solid white;
+    width: 100%;
+}
+
+.message-input input {
+    padding: 12px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+}

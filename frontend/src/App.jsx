@@ -1,8 +1,11 @@
 import './App.css'
+import Home from './pages/home/Home'
 
 function App() {
   return (
-    <h1>witam</h1>
+      <div className='app'>
+        <Home/>
+      </div>
   )
 }
 

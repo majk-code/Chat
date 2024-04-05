@@ -1,0 +1,13 @@
+.conversation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  width: 90%;
+  border: 1px solid white;
+}
+
+.conversation img {
+  height: 50px;
+}
