@@ -4,6 +4,7 @@ import home_icon from '../../assets/homepage.png'
 import setting_icon from '../../assets/setting.png'
 import { useAuthContext } from '../../context/AuthContext'
 import useLogout from '../../hooks/useLogout'
+import logout_icon from '../../assets/logout.png'
 
 const SettingBar = () => {
   const {authUser} = useAuthContext()
