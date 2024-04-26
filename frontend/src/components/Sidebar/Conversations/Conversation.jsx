@@ -1,16 +1,23 @@
-import React from 'react'
 import './Conversation.css'
-import avatar from '../../../assets/avatar.webp'
+import useConversation from '../../../zustand/useConversation'
+import { useSocketContext } from '../../../context/SocketContext'
 
-const Conversation = () => {
+const Conversation = ({conversation}) => {
+  const {selectedConversation, setSelectedConversation} = useConversation();
+
+  const {onlineUsers} = useSocketContext()
+  const isOnline = onlineUsers.includes(conversation._id)
+  const isSelected = selectedConversation?._id === conversation._id
 
   return (
-    <div className='conversation'>
+    <div onClick={() => setSelectedConversation(conversation)} className={isSelected ? 'conversation-selected' : 'conversation'}>
       <div className="avatar">
-        <img src={avatar} alt="" />
+        <div className={isOnline? 'online' : 'offline'}>
+          <img src={conversation.profilePic} alt="" />
+        </div>
       </div>
       <span className='nickname'>
-        rafal130pl
+        {conversation.fullName}
       </span>
     </div>
   )

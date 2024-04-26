@@ -1,0 +1,15 @@
+.conversations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.conversations-title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px;
+}

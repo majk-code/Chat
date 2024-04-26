@@ -1,0 +1,31 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #131415;
+    backdrop-filter: blur(20px);
+    display: none; /* Początkowo ukryj */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    border: 8px solid #292a2d;
+    border-top: 8px solid #2884ff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; /* Animacja obrotu */
+  }
+  
+  .show {
+    display: flex; /* Pokaż animowane kółko */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

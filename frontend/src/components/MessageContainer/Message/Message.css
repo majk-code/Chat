@@ -1,7 +1,48 @@
-.message {
-    background-color: white;
-    color: black;
+.message-me {
+    color: white;
     width: fit-content;
-    padding: 12px 24px;
-    border-radius: 100px;
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #252628;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.message-friend {
+    color: white;
+    width: fit-content;
+    padding: 18px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #2884ff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.user-chat-image {
+    height: 40px;
+}
+
+.date-of-send {
+    color: grey;
+    font-size: 14px;
 }

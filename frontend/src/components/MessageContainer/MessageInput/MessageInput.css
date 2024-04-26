@@ -1,13 +1,42 @@
-.message-input {
-    border: 1px solid white;
+.message-input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    padding-top: 30px;
+    background-color: transparent;
+    border-top: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.message-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #171819;
 }
 
 .message-input input {
     padding: 12px;
-    background-color: transparent;
     width: 100%;
     border: none;
     outline: none;
-    color: white;
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+.send-icon {
+    height: 26px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.send-icon:hover {
+    opacity: 0.5;
 }

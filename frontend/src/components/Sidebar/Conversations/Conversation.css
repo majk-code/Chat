@@ -2,12 +2,68 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
-  gap: 40px;
+  padding: 18px;
+  gap: 16px;
   width: 90%;
-  border: 1px solid white;
+  background-color: #131415;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.2s ease-in-out;
 }
 
 .conversation img {
-  height: 50px;
+  height: 40px;
+}
+
+.conversation:hover {
+  border: 1px solid #2884ff;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.conversation-selected {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px;
+  gap: 16px;
+  width: 90%;
+  background-color: #131415;
+  position: relative;
+  border: 1px solid #2884ff;
+  transition: 0.2s ease-in-out;
+  border-radius: 40px;
+}
+
+.offline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  width: 47px;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+
+.online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  width: 47px;
+  border: 2px solid #2cdc72;
+  border-radius: 50%;
+}
+
+.online img {
+  height: 40px;
+}
+
+.offline img {
+  height: 40px;
+}
+
+.nickname {
+  text-transform: capitalize;
 }

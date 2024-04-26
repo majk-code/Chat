@@ -1,0 +1,24 @@
+.no-chat-selected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+}
+
+.no-chat-logo {
+    height: 200px;
+}
+
+.welcome-text {
+    color: grey;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.welcome-username {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

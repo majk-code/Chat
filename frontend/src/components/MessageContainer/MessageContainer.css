@@ -1,7 +1,8 @@
 .message-container {
-  display: flex;
+
   flex-direction: column;
-  flex: 3;
-  padding: 40px;
-  border: 1px solid white;
+  justify-content: space-between;
+  flex: 0.75;
+  height: 100%;
+  background-color: #131415;
 }

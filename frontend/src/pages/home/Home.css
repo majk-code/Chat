@@ -1,6 +1,4 @@
 .home {
   display: flex;
-  height: 80vh;
-  width: 1200px;
-  border: 1px solid red;
+  height: 100vh;
 }

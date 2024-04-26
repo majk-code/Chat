@@ -1,19 +1,25 @@
 import React from 'react'
 
-const GenderCheckbox = () => {
+const GenderCheckbox = ({onCheckboxChange,selectedGender}) => {
   return (
     <div className='genderbox'>
       <div className="form-control">
         <label>
-          <span>Male</span>
+          <span>Mężczyzna</span>
         </label>
-        <input type="checkbox"/>
+        <input type="checkbox"
+          checked = {selectedGender === 'male'}
+          onChange={()=> onCheckboxChange("male")}  
+        />
       </div>
       <div className="form-control">
         <label>
-          <span>Female</span>
+          <span>Kobieta</span>
         </label>
-        <input type="checkbox"/>
+        <input type="checkbox"
+          checked = {selectedGender === 'female'}
+          onChange={()=> onCheckboxChange("female")}  
+        />
       </div>
     </div>
   )

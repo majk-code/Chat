@@ -1,5 +1,23 @@
 .nick-chat-participant {
-    height: 80px;
-    width: 100%;
-    border: 1px solid white;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.nick-chat-participant .nickname {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.date-of-join {
+    font-size: 14px;
+}
+
+.selected-user-image {
+    height: 55px;
+    width: 55px;
 }
