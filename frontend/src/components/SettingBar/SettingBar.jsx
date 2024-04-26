@@ -3,17 +3,20 @@ import './SettingBar.css'
 import home_icon from '../../assets/homepage.png'
 import setting_icon from '../../assets/setting.png'
 import { useAuthContext } from '../../context/AuthContext'
-import LogoutButton from '../SideBar/LogoutButton/LogoutButton'
+import useLogout from '../../hooks/useLogout'
 
 const SettingBar = () => {
   const {authUser} = useAuthContext()
+  const {logout} = useLogout()
 
   return (
     <div className='setting-bar'>
       <img className='setting-bar-image' src={authUser.profilePic} alt="" />
       <div className="setting-icons">
         <img onClick={() => {window.location.reload()}} src={home_icon} alt="" />
-        <LogoutButton/>
+        <div className='logout-button'>
+          <img onClick={logout} className='logout-image' src={logout_icon} alt="" />
+        </div>
         <img src={setting_icon} alt="" />
       </div>
     </div>

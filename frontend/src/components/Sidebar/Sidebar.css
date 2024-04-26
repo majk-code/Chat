@@ -4,13 +4,3 @@
   flex: 0.25;
   background-color: transparent;
 }
-
-.logout-image {
-  height: 30px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.logout-image:hover {
-  opacity: 0.5;
-}
