@@ -107,3 +107,25 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 1240px) {
+  .signup-image {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .signup-wrapper {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .signup-wrapper {
+    padding: 0px;
+  }
+
+  .signup {
+    background-color: #131415;
+  }
+}
