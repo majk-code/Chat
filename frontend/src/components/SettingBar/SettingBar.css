@@ -41,3 +41,25 @@
 .logout-image:hover {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 1040px) {
+    .setting-bar-image {
+        height: 40px;
+    }
+
+    .setting-icons img {
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .setting-bar {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 30px 0px 30px;
+    }
+
+    .setting-icons {
+        flex-direction: row;
+    }
+  }

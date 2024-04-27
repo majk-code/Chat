@@ -1,9 +1,9 @@
 .message-input-wrapper {
-    display: flex;
+    display: flex;   
+    height: 120px; 
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 30px;
     background-color: transparent;
     border-top: 2px solid rgba(255, 255, 255, 0.05);
 }
@@ -39,4 +39,15 @@
 
 .send-icon:hover {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1040px) {
+    .message-input-wrapper {
+        padding-top: 0px;
+        background-color: #181819;
+    }
+
+    .message-input {
+        padding: 14px;
+    }
 }

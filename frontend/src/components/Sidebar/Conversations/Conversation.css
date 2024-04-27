@@ -67,3 +67,59 @@
 .nickname {
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 1040px) {
+  .conversation {
+    padding: 10px;
+  }
+
+  .online img {
+    height: 20px;
+  }
+  
+  .offline img {
+    height: 20px;
+  }
+
+  .conversation-selected {
+    padding: 10px;
+  }
+
+  .offline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid grey;
+    border-radius: 50%;
+  }
+  
+  .online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #2cdc72;
+    border-radius: 50%;
+  }
+
+  .nickname {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .conversation {
+    padding: 12px 24px;
+  }
+
+  .conversation-selected {
+    padding: 12px 24px;
+  }
+
+  .nickname {
+    font-size: 12px;
+  }
+} 

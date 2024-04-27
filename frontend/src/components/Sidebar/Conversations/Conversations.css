@@ -13,3 +13,11 @@
     font-weight: 500;
     padding: 30px;
 }
+
+@media screen and (max-width: 880px) {
+    .conversations {
+        flex-direction: row;
+        overflow: auto;
+        padding: 0px 30px 20px 30px;
+    }
+  }

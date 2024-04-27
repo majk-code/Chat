@@ -22,7 +22,7 @@ const SearchInput = () => {
   }
 
   return (
-    <>
+    <div className='search-wrapper'>
     <h1 className='search-title'>Szukaj</h1>
     <form onSubmit={handleSubmit} className='search-input'>
       <img className='search-icon' src={search_icon} alt="" />
@@ -30,7 +30,7 @@ const SearchInput = () => {
       value={search}
       onChange={(e) => setSearch(e.target.value)}/>
     </form>
-    </>
+    </div>
   )
 }
 

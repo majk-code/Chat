@@ -2,3 +2,10 @@
   display: flex;
   height: 100vh;
 }
+
+@media screen and (max-width: 880px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}

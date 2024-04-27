@@ -1,7 +1,6 @@
 import React from 'react'
 import './SettingBar.css'
 import home_icon from '../../assets/homepage.png'
-import setting_icon from '../../assets/setting.png'
 import { useAuthContext } from '../../context/AuthContext'
 import useLogout from '../../hooks/useLogout'
 import logout_icon from '../../assets/logout.png'
@@ -18,7 +17,6 @@ const SettingBar = () => {
         <div className='logout-button'>
           <img onClick={logout} className='logout-image' src={logout_icon} alt="" />
         </div>
-        <img src={setting_icon} alt="" />
       </div>
     </div>
   )

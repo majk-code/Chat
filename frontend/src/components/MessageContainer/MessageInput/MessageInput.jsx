@@ -18,7 +18,7 @@ const MessageInput = () => {
     <div className='message-input-wrapper'>
     <form onSubmit={handleSubmit} className='message-input'>
       <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" placeholder='Wyślij wiadomość..'/>
-      <img className='send-icon' src={send_icon} alt="" />
+      <img onClick={handleSubmit} className='send-icon' src={send_icon} alt="" />
     </form>
     </div>
   )

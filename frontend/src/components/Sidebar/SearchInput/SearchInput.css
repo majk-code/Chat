@@ -37,3 +37,19 @@
   font-weight: 500;
   padding: 30px;
 }
+
+@media screen and (max-width: 1040px) {
+  .search-input input {
+    font-size: 14px;
+  }
+
+  .search-icon {
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .search-wrapper {
+    display: none;
+  }
+} 

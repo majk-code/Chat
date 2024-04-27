@@ -13,7 +13,7 @@ const Conversation = ({conversation}) => {
     <div onClick={() => setSelectedConversation(conversation)} className={isSelected ? 'conversation-selected' : 'conversation'}>
       <div className="avatar">
         <div className={isOnline? 'online' : 'offline'}>
-          <img src={conversation.profilePic} alt="" />
+          <img className='profile-pic-image' src={conversation.profilePic} alt="" />
         </div>
       </div>
       <span className='nickname'>
